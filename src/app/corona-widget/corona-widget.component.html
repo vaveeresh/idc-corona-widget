@@ -122,9 +122,9 @@
               </div>
               <div class="internationalContentBlock">
                 <ul>
-                  <li *ngFor="let coutryDetails of countryData; let i = index">
+                  <li *ngFor="let coutryDetails of allCountryData; let i = index">
                     <div class="inlContentHead">
-                      <span class="redColor">{{coutryDetails.confirmed}} </span>
+                      <span class="redColor">{{coutryDetails.cases}} </span>
                       <span class="inlContentCountry">{{coutryDetails.country}}</span>
                     </div>
                     <div class="inlContentSubText">

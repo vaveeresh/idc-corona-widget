@@ -21,8 +21,18 @@ export class CoronaApiService {
   ) { }
 
 
-  getCountriesData() {
-    return this.http.get(this.url);
+  // getCountriesData() {
+  //   return this.http.get(this.url);
+  // }
+
+  getAllWorldData() {
+    let allWorldUrl = 'https://corona.lmao.ninja/all';
+    return this.http.get(allWorldUrl);
+  }
+
+  getAllCountriesData() {
+    let allCountUrl = 'https://corona.lmao.ninja/countries';
+    return this.http.get(allCountUrl);
   }
 
 
