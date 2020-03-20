@@ -1,0 +1,221 @@
+/* Common Classes */
+.clrFloat {
+    clear: both;
+}   
+.padlt0 {
+    padding-left: 0px !important;
+}
+.padRt0 {
+    padding-right: 0px !important;
+}
+.margin0 {
+    margin: 0px !important;
+}
+.placeHolder::-webkit-input-placeholder {
+    color:#9c9c9c;
+}
+.contentScroll::-webkit-scrollbar {
+    width: 6px;
+}  
+.contentScroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.contentScroll::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    outline: 1px solid #797979;
+    border-radius: 10px;
+} 
+
+/* Main CSS */
+.crnMainWrapper {
+    width: 100%;
+    height: 100vh;
+}
+.crnMainContentWrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #b6b6b6;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/coronavirusBg1.png);    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.crnHeadWrap {
+    width: 98%;
+    min-height: 60px;
+    background-color: #f0faf2;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+.crnMainHeading {
+    font-size: 22px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+}
+.crnSubHeading {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+}
+.crnMainCountWrap {
+    width: 75%;
+    min-height: 50px;
+    background-color: #f0faf2;
+    margin: 7px auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;   
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.crnMainCountBlock {
+    border-right: 1px solid #cccccc;
+}
+.crnMainCountBlock:last-child {
+    border-right: none;
+}
+.mainCountHeading {    
+    font-weight: 600;
+    font-size: 12px;
+}
+.mainCountValue {
+    font-weight: 600;
+    font-size: 30px;
+}
+.redColor {
+    color: #e60000;
+}
+.blueColor {
+    color: #073fde
+}
+.greenColor {
+    color: #70a800;
+}
+.crnContentBlock {
+    width: 98%;
+    margin: 10px auto;
+}
+.crnIndiaContainer {
+    height: 380px;
+    background-color: #f0faf2;
+    overflow-y: auto;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+.crnResourceContainer {
+    height: 380px;
+    background-color: #f0faf2;
+    overflow-y: auto;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+.crnInternationalContainer {
+    height: 380px;
+    background-color: #f0faf2;
+    overflow-y: auto;
+    padding: 10px 10px;
+}
+.IndiaHeading {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+.IndiaContentBlock {
+    color: #444444 !important;
+    margin-top: 15px;
+}
+.internationalHeading {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+.resourceHeading {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.helpfulLinks {
+    word-break: break-all;
+}
+.helpfulLinksHeading {
+    font-size: 13px;
+    color: #676767;
+    font-weight: 600;
+}
+.helpfulLinks a {
+    font-size: 12px;
+}
+.internationalContentBlock {
+    color: #444444 !important;
+    margin-top: 15px;
+}
+.internationalContentBlock li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.inlContentHead {
+    font-size: 20px;
+    font-weight: 600;
+}
+.internationalContentBlock li:hover {
+    background-color: #deff07;
+}
+.internationalContentBlock li:first-child {
+    border-top: 1px solid #cccccc;;
+}
+.inlContentCountry {
+    font-size: 16px;
+}
+.inlContentSubText {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

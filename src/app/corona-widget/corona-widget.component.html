@@ -1,0 +1,153 @@
+<!-- Carona Widget - Start -->
+<div class="container-fluid crnMainWrapper">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 padlt0 padRt0">
+      <div class="crnMainContentWrap">
+
+        <div class="crnHeadWrap">
+          <div class="crnMainHeading">
+            Coronavirus COVID-19 Live Tracker
+          </div>
+          <div class="crnSubHeading">
+            No need to Panic, Just Stay Informed. Prevention is the Cure..
+          </div>
+        </div>
+
+        <!-- Main Total Count Block -->
+        <div class="crnMainCountWrap">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 crnMainCountBlock">
+              <div class="mainCountHeading">Total Confirmed</div>
+              <div class="mainCountValue redColor">{{worldDataConfirmed}}</div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 crnMainCountBlock">
+              <div class="mainCountHeading">Total Deaths</div>
+              <div class="mainCountValue blueColor">{{worldDataDeaths}}</div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 crnMainCountBlock">
+              <div class="mainCountHeading">Total Recovered</div>
+              <div class="mainCountValue greenColor">{{worldDataRecovered}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="clrFloat"></div>
+
+        <!-- Main Total Count Block -->
+        <div class="row crnContentBlock">
+
+
+          <!-- India -->
+          <div class="col-sm-3 col-md-3 col-lg-3 padlt0 padRt0">
+            <div class="crnResourceContainer contentScroll">
+              <div class="resourceHeading">
+                Important Resources
+              </div>
+              <div>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/qgylp3Td1Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="resourceHeading">
+                Helpful Links
+              </div>
+              <section class="helpfulLinks">
+                <ul>
+                  <li>
+                    <div class="helpfulLinksHeading">Helpline Numbers (by State) </div>
+                    <a target="_blank" href="https://www.mohfw.gov.in/coronvavirushelplinenumber.pdf">
+                      https://www.mohfw.gov.in/coronvavirushelplinenumber.pdf
+                    </a>
+                  </li>
+                  <li>
+                    <div class="helpfulLinksHeading">How to quarantine yourself at home</div>
+                    <a target="_blank" href="https://gpfreetech.co/coronavirus-how-to-quarantine-yourself-at-home/">
+                      https://gpfreetech.co/coronavirus-how-to-quarantine-yourself-at-home/
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <div class="resourceHeading">
+                Key Information
+              </div>
+              <section class="helpfulLinks">
+                <ul>
+                  <li>
+                    <div class="helpfulLinksHeading">Ministry of Health and Family Welfare, Gov. of India </div>
+                    <a target="_blank" href="https://www.mohfw.gov.in/">
+                      https://www.mohfw.gov.in/
+                    </a>
+                  </li>
+                  <li>
+                    <div class="helpfulLinksHeading">WHO : COVID-19 Home Page</div>
+                    <a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">
+                      https://www.who.int/emergencies/diseases/novel-coronavirus-2019
+                    </a>
+                  </li>                  
+                  <li>
+                    <div class="helpfulLinksHeading">CDC</div>
+                    <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">
+                      https://www.cdc.gov/coronavirus/2019-ncov/faq.html
+                    </a>
+                  </li>
+                  <li>
+                    <div class="helpfulLinksHeading">COVID-19 Global Tracker</div>
+                    <a target="_blank" href="https://coronavirus.thebaselab.com/">
+                      https://coronavirus.thebaselab.com/
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+            </div>            
+          </div>
+
+          <!-- Important Resources -->
+          <div class="col-sm-6 col-md-6 col-lg-6 padlt0 padRt0">
+            <div class="crnIndiaContainer contentScroll">
+              <div class="IndiaHeading">
+                  India
+              </div>
+              <div class="IndiaContentBlock">
+                <section class="embed-hide">
+                  <table border="1" id="prefectures-table" class="table table-striped table-hover"></table>
+                </section>
+              </div>
+            </div> 
+          </div>
+
+          <!-- nternational Resources -->
+          <div class="col-sm-3 col-md-3 col-lg-3 padlt0 padRt0">
+            <div class="crnInternationalContainer contentScroll">
+              <div class="internationalHeading">
+                International
+              </div>
+              <div class="internationalContentBlock">
+                <ul>
+                  <li *ngFor="let coutryDetails of countryData; let i = index">
+                    <div class="inlContentHead">
+                      <span class="redColor">{{coutryDetails.confirmed}} </span>
+                      <span class="inlContentCountry">{{coutryDetails.country}}</span>
+                    </div>
+                    <div class="inlContentSubText">
+                      <span class="intlRecovered">Recovered: </span>
+                      <span class="greenColor">{{coutryDetails.recovered}}</span>
+                    </div>
+                    <div class="inlContentSubText">
+                      <span class="intlRecovered">Deaths: </span>
+                      <span class="blueColor">{{coutryDetails.deaths}}</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Corona Widget - Ends-->
